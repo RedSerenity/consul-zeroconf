@@ -12,7 +12,7 @@ _* Work in Progress *_
 <p>This application makes it easy to spin up a Consul cluster with almost zero manual commands.</p>
 <p>Start up a single Consul server to coordinate bootstrapping an entire Consul cluster.</p>
 <p align="center">
-![Consul ZeroConf Architecture](https://github.com/redserenity/consul-zeroconf/blob/master/architecture.png?raw=true)
+	<img src="https://github.com/redserenity/consul-zeroconf/blob/master/architecture.png?raw=true" />
 </p>
 
 <br/>
