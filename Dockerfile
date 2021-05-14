@@ -34,7 +34,7 @@ RUN mkdir -p /consul-zeroconf/config && \
     mkdir -p /consul-zeroconf/nodes && \
     chown -R consul-zeroconf:consul-zeroconf /consul-zeroconf
 
-COPY --from=Builder /consul-zeroconf /usr/bin/consul-zeroconf
+COPY --from=Builder /src/consul-zeroconf /usr/bin/consul-zeroconf
 
 VOLUME /consul-zeroconf/config
 
