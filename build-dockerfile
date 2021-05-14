@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+CONSUL_ZEROCONF_VERSION=${1:-0.5.5}
+TAG_LATEST=${2:-"true"}
+
+TAGS="-t redserenity/consul-zeroconf:${CONSUL_ZEROCONF_VERSION}"
+if [ "$TAG_LATEST" = "true" ]; then
+  TAGS="${TAGS} -t redserenity/consul-zeroconf:latest"
+fi
+
+docker build ${TAGS} \
+  --build-arg CONSUL_ZEROCONF_VERSION=${CONSUL_ZEROCONF_VERSION} \
+  .
